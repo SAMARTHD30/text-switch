@@ -1,0 +1,21 @@
+[package]
+name = "textswitch"
+version = "0.1.0"
+edition = "2021"
+description = "Fast Windows text expansion for prompts, snippets, and repeated paragraphs."
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+rdev = { version = "0.5", features = ["unstable_grab"] }
+arboard = "3"
+notify = "6"
+tray-icon = "0.19"
+dirs = "5"
+eframe = { version = "0.34.3", default-features = false, features = ["glow", "default_fonts"] }
+
+[profile.release]
+opt-level = "z"
+lto = true
+strip = true
+panic = "abort"

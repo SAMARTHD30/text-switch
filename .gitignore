@@ -1,0 +1,11 @@
+/target
+/dist
+/.worktrees
+/.claude
+/.github
+/CLAUDE.md
+/claude.md
+/AGENTS.md
+/agents.md
+/design
+/tests
